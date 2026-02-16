@@ -1,0 +1,24 @@
+﻿@inherits LayoutComponentBase
+
+<div class="d-flex justify-content-center align-items-center vh-100 vw-100 bg-gradient">
+    <div class="card shadow-lg border-0 rounded-4 p-5 d-flex flex-column justify-content-center align-items-center w-100">
+        @Body
+    </div>
+</div>
+
+<style>
+    .bg-gradient {
+        background: linear-gradient(135deg, #ffffff, #275667, #2c5364);
+    }
+
+    .card {
+        min-height: 100vh; /* card fills most of the screen height */
+        display: flex; /* flex container */
+        flex-direction: column; /* stack children vertically */
+        justify-content: flex-start; /* center vertically */
+        align-items: center; /* center horizontally */
+        margin: auto; /* let flexbox center it */
+        max-width: 500px; /* responsive width */
+        width: 100%;
+    }
+</style>
